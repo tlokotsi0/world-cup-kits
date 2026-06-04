@@ -11,8 +11,8 @@ const swaggerOptions = {
   customCss: '.auth-wrapper { display: none !important; }',
 };
 
-router.use('/events', productsRoute);
-router.use('/locations', usersRoute);
+router.use('/products', productsRoute);
+router.use('/users', usersRoute);
 router.use(
   '/api-docs',
   swaggerUi.serve,
