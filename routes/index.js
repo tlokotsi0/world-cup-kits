@@ -33,7 +33,7 @@ router.get('/logout', (req, res, next) => {
 router.get('/', (req, res) => {
   res.send(
     req.session.user !== undefined
-      ? `Logged in as ${req.session.user.displayName}`
+      ? `Logged in as ${req.session.user.name}`
       : 'Logged Out',
   );
 });
