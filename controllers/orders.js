@@ -12,7 +12,7 @@ export async function getAllOrders(req, res) {
   }
 }
 
-export async function getSingleOrders(req, res) {
+export async function getSingleOrder(req, res) {
   try {
     if (!ObjectId.isValid(req.params.id)) {
       return res.status(400).json({ message: 'Invalid ID format.' });
