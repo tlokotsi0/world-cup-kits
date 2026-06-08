@@ -14,7 +14,7 @@ const swaggerOptions = {
 
 router.use('/products', productsRoute);
 router.use('/users', usersRoute);
-router.use('/users', ordersRoute);
+router.use('/orders', ordersRoute);
 router.use(
   '/api-docs',
   swaggerUi.serve,
